@@ -1,6 +1,6 @@
 import React from "react"
 // import PaypalExpressBtn from "react-paypal-express-checkout"
-import CheckoutPage from "./CheckoutPage"
+// import CheckoutPage from "./CheckoutPage"
 
 export default class MyApp extends React.Component {
 	constructor(props) {
@@ -14,7 +14,7 @@ export default class MyApp extends React.Component {
 			this.props.history.push("/checkout", { currency, totalAmount })
 		}
 
-		let env = "production" // you can set here to 'production' for production
+		// let env = "production" // you can set here to 'production' for production
 		let currency = "USD" // or you can set this value from your props or state
 
 		// const client = {
