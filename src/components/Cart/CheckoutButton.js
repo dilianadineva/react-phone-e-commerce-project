@@ -9,9 +9,9 @@ export default class MyApp extends React.Component {
 		this.state = {}
 	}
 	render() {
-		const gotoCheckout = (currency, totalAmount) => {
+		const gotoCheckout = (currency, totalAmount, clearCart) => {
 			console.log("checkout")
-			this.props.history.push("/checkout", { currency, totalAmount })
+			this.props.history.push("/checkout", { currency, totalAmount, clearCart })
 		}
 
 		// let env = "production" // you can set here to 'production' for production
